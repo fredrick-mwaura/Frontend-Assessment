@@ -19,109 +19,139 @@
 </head>
 <body>
 <div class="page-wrapper">
-<div class="container">
-  <div class="row justify-content-center">
-    <div class="col-xl-4 col-lg-5 col-md-7 col-sm-10">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-xl-6 col-lg-7 col-md-8 col-sm-10 d-flex justify-content-center">
 
-      <div class="card main-card shadow-lg border-0">
-        <div class="card-body p-4">
+        <div class="card main-card shadow-lg border-0">
+          <div class="card-body p-4">
 
-          <!-- Profile Section -->
-          <div class="d-flex align-items-center mb-4">
-            <!-- Replace with your own image -->
-            <img src="images/profile.png" alt="Profile" class="profile-img me-3">
-            <div>
-              <h5 class="fw-bold text-white mb-0">Michael</h5>
-              <p class="small-text mb-0">
-                You've officially joined your first investment knowledge club!
+            <!-- Profile Section -->
+            <div class="d-flex align-items-center mb-4 border border-warning rounded-3 p-3">
+              <!-- Replace with your own image -->
+              <img src="images/profile.png" alt="Profile" class="profile-img me-3">
+              <div>
+                <h5 class="fw-bold text-white mb-0">Michael</h5>
+                <p class="small-text mb-0 text-light">
+                  You've officially joined your first investment knowledge club!
+                </p>
+              </div>
+            </div>
+
+            <!-- Stats Section -->
+            <div class="row g-3">
+              <div class="col-6">
+                <div class="stat-box stat-green">
+                  <div class="d-flex align-items-center gap-2">
+                    <img src="images/ben.png" alt="Benard Makodingo" class="stat-avatar">
+                    <div class="stat-text">
+                      <small>Benard Makodingo</small>
+                    </div>
+                  </div>
+                  <div class="stat-score">
+                    <h4>350</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="stat-box stat-lightgreen">
+                  <div class="d-flex align-items-center gap-2">
+                    <img src="images/foot.png" alt="BigSmall Foot" class="stat-avatar">
+                    <div class="stat-text">
+                      <small>BigSmall Foot</small>
+                    </div>
+                  </div>
+                  <div class="stat-score">
+                    <h4>225</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="stat-box stat-yellow">
+                  <div class="d-flex align-items-center gap-2">
+                    <img src="images/carol.png" alt="Caroline Likhoi" class="stat-avatar">
+                    <div class="stat-text">
+                      <small>Caroline Likhoi</small>
+                    </div>
+                  </div>
+                  <div class="stat-score">
+                    <h4>117</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="stat-box stat-pink">
+                  <div class="d-flex align-items-center gap-2">
+                    <img src="images/carol.png" alt="Caroline Likhoi" class="stat-avatar">
+                    <div class="stat-text">
+                      <small>Caroline Likhoi</small>
+                    </div>
+                  </div>
+                  <div class="stat-score">
+                    <h4>321</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Encouragement -->
+            <div class="encouragement mt-4">
+              <strong>Now let's make you great!</strong>
+              <p class="mb-0">
+                You've shown us where you are doing well and where we can support you to be great!
               </p>
             </div>
-          </div>
 
-          <!-- Stats Section -->
-          <div class="row g-3">
-            <div class="col-6">
-              <div class="stat-box stat-green text-center">
-                <small>Benard Makodingo</small>
-                <h4>350</h4>
-              </div>
-            </div>
-            <div class="col-6">
-              <div class="stat-box stat-lightgreen text-center">
-                <small>BigSmall Foot</small>
-                <h4>225</h4>
-              </div>
-            </div>
-            <div class="col-6">
-              <div class="stat-box stat-yellow text-center">
-                <small>Caroline Likhoi</small>
-                <h4>117</h4>
-              </div>
-            </div>
-            <div class="col-6">
-              <div class="stat-box stat-pink text-center">
-                <small>Caroline Likhoi</small>
-                <h4>321</h4>
-              </div>
-            </div>
-          </div>
+            <!-- Membership Section -->
+            <div class="mt-4">
 
-          <!-- Encouragement -->
-          <div class="encouragement mt-4">
-            <strong>Now let's make you great!</strong>
-            <p class="mb-0">
-              You've shown us where you are doing well and where we can support you to be great!
-            </p>
-          </div>
-
-          <!-- Membership Section -->
-          <div class="mt-4">
-
-            <!-- Foundation Membership -->
-            <div class="membership foundation mb-3">
-              <div class="membership-header" data-target="foundationDesc">
-                FOUNDATION MEMBERSHIP
+              <!-- Foundation Membership -->
+              <div class="membership foundation mb-3">
+                <div class="membership-header" data-target="foundationDesc">
+                  <b>FOUNDATION</b> MEMBERSHIP
+                  <i class="fas fa-chevron-down float-end"></i>
+                </div>
+                <div class="membership-body d-none" id="foundationDesc">
+                  We invest for you in shares and in the Mansa‑X global fund.
+                  Service is free online with your personal representative, but
+                  service in the office may have extra charges.
+                </div>
               </div>
-              <div class="membership-body d-none" id="foundationDesc">
-                We invest for you in shares and in the Mansa‑X global fund.
-                Service is free online with your personal representative, but
-                service in the office may have extra charges.
+
+              <!-- Economy Membership -->
+              <div class="membership economy">
+                <div class="membership-header" data-target="economyDesc">
+                  <b>ECONOMY</b> MEMBERSHIP
+                  <i class="fas fa-chevron-down float-end"></i>
+                </div>
+                <div class="membership-body d-none" id="economyDesc">
+                  We invest your money for you at a guaranteed rate with the
+                  Mansa‑X global fund. Service is free online with your personal
+                  representative, but service in the office may have extra charges.
+                </div>
               </div>
             </div>
 
-            <!-- Economy Membership -->
-            <div class="membership economy">
-              <div class="membership-header" data-target="economyDesc">
-                ECONOMY MEMBERSHIP
-              </div>
-              <div class="membership-body d-none" id="economyDesc">
-                We invest your money for you at a guaranteed rate with the
-                Mansa‑X global fund. Service is free online with your personal
-                representative, but service in the office may have extra charges.
-              </div>
+            <!-- Modal Trigger -->
+            <div class="text-center mt-4">
+              <button
+                class="btn btn-warning w-100"
+                data-bs-toggle="modal"
+                data-bs-target="#detailsModal"
+              >
+                A closer look at the membership details is available here
+              </button>
             </div>
           </div>
 
-          <!-- Modal Trigger -->
-          <div class="text-center mt-4">
-            <button
-              class="btn btn-warning w-100"
-              data-bs-toggle="modal"
-              data-bs-target="#detailsModal"
-            >
-              A closer look at the membership details is available here
-            </button>
+          <!-- Footer -->
+          <div class="card-footer text-center footer-strip">
+            FourFront Management © 2025. All Rights Reserved.
           </div>
-        </div>
-
-        <!-- Footer -->
-        <div class="card-footer text-center footer-strip">
-          FourFront Management © 2025. All Rights Reserved.
         </div>
       </div>
     </div>
   </div>
-</div>
 </div>
 
 <!-- Modal -->

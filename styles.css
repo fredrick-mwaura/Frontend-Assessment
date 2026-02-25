@@ -4,7 +4,7 @@ body {
 }
 
 body {
-  background-color: #f7f7f7; /* light grey like the assessment */
+  background-color: #f2f2f2;
   font-family: "Segoe UI", sans-serif;
   margin: 0;
 }
@@ -20,12 +20,12 @@ body {
 /* Floating WhatsApp button */
 .whatsapp-float {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
+  bottom: 24px;
+  right: 24px;
   background-color: #25d366;
   color: white;
-  width: 50px;
-  height: 50px;
+  width: 52px;
+  height: 52px;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -42,13 +42,13 @@ body {
   color: white;
 }
 
-/* Card that mimics the phone UI */
 .main-card {
-  background-color: #fef6ef; /* light cream similar to phone body */
-  border: 2px solid #ded6cf;
+  background-color: #4c4c4c;
+  border: 2px solid #d7d7d7;
   border-radius: 16px;
   overflow: hidden;
-  max-width: 420px;
+  width: 100%;
+  max-width: 520px;
   margin: 0 auto;
 }
 
@@ -67,31 +67,55 @@ body {
 
 .stat-box {
   border-radius: 12px;
-  padding: 12px;
+  padding: 10px 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.stat-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 .stat-box small {
-  font-size: 11px;
+  font-size: clamp(0.7rem, 1.8vw, 0.85rem);
+  color: #333333;
 }
 
 .stat-box h4 {
-  margin-top: 6px;
-  font-weight: bold;
+  margin: 0;
+  font-weight: 700;
+  font-size: clamp(1rem, 2.4vw, 1.3rem);
 }
 
-/* Stat colours */
-.stat-green { background-color: #fbe4d5; }     /* warm peach */
-.stat-lightgreen { background-color: #ffeec2; } /* soft yellow */
-.stat-yellow { background-color: #d7f0c5; }     /* pale green */
-.stat-pink { background-color: #f9d1e5; }       /* light pink */
+.stat-score {
+  margin-left: 0.5rem;
+}
+
+/* Stat colours (match cards on mock) */
+.stat-green { background-color: #ffe3c2; }      /* warm peach/orange (Benard) */
+.stat-lightgreen { background-color: #e6f8b2; } /* yellow‑green (BigSmall Foot) */
+.stat-yellow { background-color: #ffe79a; }     /* bright yellow (Caroline 117) */
+.stat-pink { background-color: #ffd3ec; }       /* pink (Caroline 321) */
 
 /* Encouragement section */
 .encouragement {
-  background: #f6b74e; /* golden orange strip like design */
+  background: #4c4c4c; /* dark panel like design */
   padding: 12px;
   border-radius: 10px;
   font-size: 12px;
-  color: #31250a;
+  color: #ffffff;
+}
+
+.encouragement strong {
+  color: #fecd3a; /* yellow title text */
+}
+
+.encouragement p {
+  color: #ffffff;
 }
 
 /* Membership cards */
@@ -102,8 +126,16 @@ body {
 
 .membership-header {
   padding: 12px;
-  font-weight: bold;
   font-size: 13px;
+  position: relative;
+}
+
+.membership-header .fa-chevron-down {
+  transition: transform 0.3s ease;
+}
+
+.membership.active .membership-header .fa-chevron-down {
+  transform: rotate(180deg);
 }
 
 .membership-body {
@@ -112,18 +144,18 @@ body {
 }
 
 .foundation {
-  background-color: #f4b32a; /* bright foundation yellow/orange */
+  background-color: #fecd3a; /* foundation membership yellow */
   color: #ffffff;
 }
 
 .economy {
-  background-color: #556a89; /* muted navy like assessment */
+  background-color: #6a7fb0; /* blue membership block */
   color: #fff;
 }
 
 /* Footer strip matching the design */
 .footer-strip {
-  background-color: #f4b32a;
+  background-color: #fecd3a;
   font-size: 12px;
   font-weight: 500;
 }
@@ -138,5 +170,19 @@ body {
 @media (min-width: 992px) {
   .page-wrapper {
     padding: 80px 32px;
+  }
+
+  .main-card {
+    max-width: 680px; /* use more horizontal space on desktop */
+  }
+}
+
+@media (max-width: 575.98px) {
+  .whatsapp-float {
+    bottom: 14px;
+    right: 14px;
+    width: 44px;
+    height: 44px;
+    font-size: 20px;
   }
 }

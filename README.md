@@ -27,7 +27,7 @@ This project recreates a mobile application interface based on the provided desi
 ## 📁 Project Structure
 
 ```
-saf/
+frontend-assessment/
 ├── index.html          # Main HTML file
 ├── styles.css          # Custom CSS styles
 ├── script.js           # JavaScript functionality
