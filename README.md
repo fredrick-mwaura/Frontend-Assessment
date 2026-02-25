@@ -1,4 +1,4 @@
-# SAF Mobile App - Frontend Assessment
+# Mobile App - Frontend Assessment
 
 A responsive mobile application design recreated using HTML, CSS, JavaScript, and Bootstrap 5.
 
@@ -7,25 +7,6 @@ A responsive mobile application design recreated using HTML, CSS, JavaScript, an
 This project recreates a mobile application interface based on the provided design mockup. The application features a user profile section, statistics cards, motivational content, interactive membership options, and a WhatsApp integration link.
 
 ## 🚀 Features
-
-### ✅ Implemented Features
-
-- **Responsive Design**: Fully responsive layout that works on desktop, tablet, and mobile devices
-- **User Profile Section**: Displays user avatar, name, and welcome message
-- **Statistics Cards**: Four interactive cards showing names and numerical values
-- **Motivational Section**: Inspirational message with call-to-action
-- **Interactive Membership Cards**: 
-  - Foundation Membership (red/yellow gradient)
-  - Economy Membership (teal gradient)
-  - Click to expand/collapse descriptions
-  - Smooth animations and transitions
-- **WhatsApp Integration**: Direct link to WhatsApp with hover effects
-- **Modern UI/UX**: 
-  - Gradient backgrounds
-  - Smooth animations
-  - Hover effects
-  - Touch-friendly interface
-  - Loading animations
 
 ### 🎨 Design Elements
 
@@ -77,18 +58,6 @@ saf/
 2. **Open `index.html` in a web browser**
 3. **No additional setup required** - all dependencies are loaded via CDN
 
-### Local Development
-For local development with live reload:
-```bash
-# Using Python
-python -m http.server 8000
-
-# Using Node.js (if you have http-server installed)
-npx http-server
-
-# Using PHP
-php -S localhost:8000
-```
 
 Then open `http://localhost:8000` in your browser.
 
@@ -111,15 +80,6 @@ Primary colors are defined in CSS:
 The design uses system fonts for optimal performance:
 - `'Segoe UI', Tahoma, Geneva, Verdana, sans-serif`
 
-## 🌐 Browser Support
-
-- Chrome 60+
-- Firefox 55+
-- Safari 12+
-- Edge 79+
-- Mobile Safari (iOS 12+)
-- Chrome Mobile (Android 8+)
-
 ## 📋 Requirements Compliance
 
 ✅ **HTML5**: Semantic markup structure  
@@ -130,18 +90,3 @@ The design uses system fonts for optimal performance:
 ✅ **Interactivity**: Membership cards, hover effects  
 ✅ **Clean Code**: Well-organized and commented  
 ✅ **Design Matching**: Faithful recreation of provided mockup  
-
-## 🚀 Performance Features
-
-- **Optimized animations**: CSS transforms for smooth 60fps animations
-- **Debounced resize events**: Prevents performance issues during window resizing
-- **Touch event optimization**: Passive event listeners for better mobile performance
-- **Minimal dependencies**: Only essential libraries loaded via CDN
-
-## 📞 Contact & Support
-
-For questions or support regarding this project, please refer to the assessment guidelines.
-
----
-
-**Note**: This project was created as part of a frontend assessment to demonstrate proficiency in modern web development technologies and responsive design principles.
