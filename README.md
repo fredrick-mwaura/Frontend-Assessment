@@ -1,4 +1,4 @@
-# Mobile App - Frontend Assessment
+# Frontend Assessment
 
 A responsive mobile application design recreated using HTML, CSS, JavaScript, and Bootstrap 5.
 
