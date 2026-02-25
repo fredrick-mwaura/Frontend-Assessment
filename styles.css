@@ -1,21 +1,21 @@
-html,
-body {
+/* ─── BASE ───────────────────────────────────────────────────────────────── */
+html, body {
   height: 100%;
-}
-
-body {
-  background-color: #f2f2f2;
-  font-family: "Segoe UI", sans-serif;
   margin: 0;
 }
 
-.page-wrapper {
-   min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+body {
+  background-color: #e8e8e8;
+  font-family: "Segoe UI", sans-serif;
 }
 
-/* Floating WhatsApp button */
+.page-wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ─── WHATSAPP FLOAT ─────────────────────────────────────────────────────── */
 .whatsapp-float {
   position: fixed;
   bottom: 24px;
@@ -29,17 +29,17 @@ body {
   align-items: center;
   justify-content: center;
   font-size: 24px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 2px 10px rgba(0,0,0,0.3);
   text-decoration: none;
   z-index: 1000;
   transition: transform 0.3s ease;
 }
-
 .whatsapp-float:hover {
   transform: scale(1.1);
   color: white;
 }
 
+/* ─── CARD (mobile default) ──────────────────────────────────────────────── */
 .main-card {
   background-color: #4c4c4c;
   border: 2px solid #d7d7d7;
@@ -50,6 +50,7 @@ body {
   margin: 0 auto;
 }
 
+/* ─── PROFILE ────────────────────────────────────────────────────────────── */
 .profile-img {
   width: 75px;
   height: 75px;
@@ -63,6 +64,7 @@ body {
   color: #4f4f4f;
 }
 
+/* ─── STAT BOXES ─────────────────────────────────────────────────────────── */
 .stat-box {
   border-radius: 12px;
   padding: 10px 12px;
@@ -93,55 +95,46 @@ body {
   margin-left: 0.5rem;
 }
 
-/* Mobile: Stack score below name */
-@media (max-width: 767.98px) {
-  .stat-box {
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-  }
+/* ─── STAT COLOURS ───────────────────────────────────────────────────────── */
+.stat-green      { background-color: #ffe3c2; }
+.stat-lightgreen { background-color: #e6f8b2; }
+.stat-yellow     { background-color: #ffe79a; }
+.stat-pink       { background-color: #ffd3ec; }
 
-  .stat-score {
-    margin-left: 0;
-    margin-top: 0.5rem;
-  }
-}
-
-
-
-/* Stat colours (match cards on mock) */
-.stat-green { background-color: #ffe3c2; }      /* warm peach/orange (Benard) */
-.stat-lightgreen { background-color: #e6f8b2; } /* yellow‑green (BigSmall Foot) */
-.stat-yellow { background-color: #ffe79a; }     /* bright yellow (Caroline 117) */
-.stat-pink { background-color: #ffd3ec; }       /* pink (Caroline 321) */
-
-/* Encouragement section */
+/* ─── ENCOURAGEMENT ──────────────────────────────────────────────────────── */
 .encouragement {
-  background: #4c4c4c; /* dark panel like design */
-  padding: 12px;
+  background: #3a3a3a;
+  padding: 16px 18px;
   border-radius: 10px;
-  font-size: 12px;
+  font-size: 13px;
   color: #ffffff;
+  border-left: 4px solid #fecd3a;
 }
 
 .encouragement strong {
-  color: #fecd3a; /* yellow title text */
+  display: block;
+  font-size: 15px;
+  color: #fecd3a;
+  margin-bottom: 6px;
 }
 
 .encouragement p {
-  color: #ffffff;
+  color: #e0e0e0;
+  margin: 0;
+  line-height: 1.5;
 }
 
-/* Membership cards */
+/* ─── MEMBERSHIP CARDS ───────────────────────────────────────────────────── */
 .membership {
   border-radius: 10px;
   cursor: pointer;
 }
 
 .membership-header {
-  padding: 12px;
+  padding: 14px 16px;
   font-size: 13px;
   position: relative;
+  letter-spacing: 0.03em;
 }
 
 .membership-header .fa-chevron-down {
@@ -153,58 +146,32 @@ body {
 }
 
 .membership-body {
-  padding: 12px;
+  padding: 12px 16px;
   font-size: 12px;
+  line-height: 1.6;
 }
 
 .foundation {
-  background-color: #fecd3a; /* foundation membership yellow */
-  color: #ffffff;
+  background-color: #fecd3a;
+  color: #3a3a3a;
 }
 
 .economy {
-  background-color: #6a7fb0; /* blue membership block */
+  background-color: #6a7fb0;
   color: #fff;
 }
 
-/* Footer strip matching the design */
+/* ─── FOOTER ─────────────────────────────────────────────────────────────── */
 .footer-strip {
   background-color: #fecd3a;
   font-size: 12px;
-  font-weight: 500;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: #3a3a3a;
+  padding: 14px;
 }
 
-/* Responsive tweaks */
-@media (min-width: 576px) {
-  .page-wrapper {
-    padding: 60px 24px;
-  }
-}
-
-@media (min-width: 992px) {
-  .page-wrapper {
-    padding: 64px 24px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .app-shell {
-    width: 100%;
-  }
-
-  .page-wrapper {
-    align-items: flex-start;
-    justify-content: flex-start;
-    padding: 40px 0;
-  }
-
-  .main-card {
-    width: 100%;
-    max-width: none;
-    margin: 0;
-  }
-}
-
+/* ─── MOBILE ─────────────────────────────────────────────────────────────── */
 @media (max-width: 575.98px) {
   .whatsapp-float {
     bottom: 14px;
@@ -212,5 +179,252 @@ body {
     width: 44px;
     height: 44px;
     font-size: 20px;
+  }
+
+  .stat-box {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .stat-score {
+    margin-left: 0;
+    margin-top: 0.5rem;
+  }
+}
+
+/* ─── TABLET ─────────────────────────────────────────────────────────────── */
+@media (min-width: 576px) and (max-width: 1023.98px) {
+  .page-wrapper {
+    padding: 40px 24px;
+  }
+
+  .stat-box {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 16px 12px;
+    gap: 8px;
+  }
+
+  .stat-avatar {
+    width: 50px;
+    height: 50px;
+  }
+
+  .stat-text { width: 100%; }
+  .stat-score { margin-left: 0; }
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   DESKTOP — LinkedIn-style: grey on sides, card fills center top-to-bottom
+   ═══════════════════════════════════════════════════════════════════════════ */
+@media (min-width: 1024px) {
+
+  html, body {
+    height: 100%;
+  }
+
+  /* Full viewport, grey background bleeds left/right of the card */
+  .page-wrapper {
+    height: 100vh;
+    min-height: 100vh;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #e8e8e8;
+  }
+
+  /* Centered column — LinkedIn-style horizontal padding creates the side gaps */
+  .app-shell {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    max-width: 1100px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0;
+  }
+
+  .app-shell > .row {
+    flex: 1;
+    display: flex;
+    margin: 0;
+  }
+
+  .app-shell > .row > .col-12 {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+
+  /* Card: no radius, no side borders — stretches edge-to-edge within the column */
+  .main-card {
+    flex: 1;
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    border-radius: 0;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Card body is the main canvas — even generous padding */
+  .main-card .card-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 48px 56px !important;
+  }
+
+  /* Two-column layout fills remaining height */
+  .main-card .card-body > .row {
+    flex: 1;
+    align-items: stretch;
+    --bs-gutter-x: 0;
+  }
+
+  /* ── LEFT COLUMN ────────────────────────────────────────────────────────── */
+  .main-card .card-body > .row > .col-lg-7 {
+    display: flex;
+    flex-direction: column;
+    padding-right: 48px;
+    border-right: 1px solid rgba(255, 255, 255, 0.12);
+  }
+
+  /* Profile row */
+  .main-card .card-body > .row > .col-lg-7 .border-warning {
+    margin-bottom: 32px !important;
+    padding: 20px 24px !important;
+    border-radius: 12px !important;
+  }
+
+  /* Stat grid: 2×2, fills remaining column height */
+  .main-card .card-body > .row > .col-lg-7 .row.g-3 {
+    flex: 1;
+    --bs-gutter-y: 1rem;
+    --bs-gutter-x: 1rem;
+  }
+
+  .main-card .card-body > .row > .col-lg-7 .row.g-3 [class^="col-"] {
+    display: flex;
+  }
+
+  .stat-box {
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 32px 20px;
+    gap: 14px;
+    border-radius: 16px;
+    width: 100%;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .stat-box:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.13);
+  }
+
+  .stat-avatar {
+    width: 68px;
+    height: 68px;
+    border: 3px solid rgba(255,255,255,0.7);
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  }
+
+  .stat-text { width: 100%; }
+  .stat-score { margin-left: 0; }
+
+  .stat-box small {
+    font-size: 0.88rem;
+    font-weight: 600;
+    color: #444;
+  }
+
+  .stat-box h4 {
+    font-size: 1.9rem;
+    font-weight: 800;
+    color: #2a2a2a;
+  }
+
+  /* ── RIGHT COLUMN ───────────────────────────────────────────────────────── */
+  .main-card .card-body > .row > .col-lg-5 {
+    display: flex;
+    flex-direction: column;
+    padding-left: 48px;
+  }
+
+  .encouragement {
+    padding: 22px 24px;
+    font-size: 14px;
+    border-radius: 12px;
+    border-left: 5px solid #fecd3a;
+    flex-shrink: 0;
+  }
+
+  .encouragement strong {
+    font-size: 17px;
+    margin-bottom: 8px;
+  }
+
+  /* Membership wrapper fills the rest, with gap between cards */
+  .main-card .card-body > .row > .col-lg-5 .mt-4:not(.text-center) {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin-top: 28px !important;
+  }
+
+  .main-card .card-body > .row > .col-lg-5 .mt-4:not(.text-center) > .membership {
+    margin-bottom: 0 !important;
+  }
+
+  .membership-header {
+    font-size: 14px;
+    padding: 18px 20px;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+  }
+
+  .membership-body {
+    font-size: 13px;
+    padding: 14px 20px 18px;
+  }
+
+  /* CTA button — pushed to the bottom of the right column */
+  .main-card .card-body > .row > .col-lg-5 .text-center.mt-4 {
+    margin-top: auto !important;
+    padding-top: 28px;
+    flex-shrink: 0;
+  }
+
+  .main-card .card-body > .row > .col-lg-5 .text-center.mt-4 .btn {
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 14px;
+    padding: 14px 24px;
+    letter-spacing: 0.03em;
+    box-shadow: 0 2px 8px rgba(254, 205, 58, 0.4);
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+  }
+
+  .main-card .card-body > .row > .col-lg-5 .text-center.mt-4 .btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(254, 205, 58, 0.55);
+  }
+
+  /* Footer */
+  .footer-strip {
+    padding: 16px 56px;
+    font-size: 13px;
+    text-align: center;
   }
 }
