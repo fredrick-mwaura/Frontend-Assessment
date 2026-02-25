@@ -10,11 +10,9 @@ body {
 }
 
 .page-wrapper {
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 40px 16px;
+   min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 /* Floating WhatsApp button */
@@ -95,6 +93,22 @@ body {
   margin-left: 0.5rem;
 }
 
+/* Mobile: Stack score below name */
+@media (max-width: 767.98px) {
+  .stat-box {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  .stat-score {
+    margin-left: 0;
+    margin-top: 0.5rem;
+  }
+}
+
+
+
 /* Stat colours (match cards on mock) */
 .stat-green { background-color: #ffe3c2; }      /* warm peach/orange (Benard) */
 .stat-lightgreen { background-color: #e6f8b2; } /* yellow‑green (BigSmall Foot) */
@@ -169,11 +183,25 @@ body {
 
 @media (min-width: 992px) {
   .page-wrapper {
-    padding: 80px 32px;
+    padding: 64px 24px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .app-shell {
+    width: 100%;
+  }
+
+  .page-wrapper {
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 40px 0;
   }
 
   .main-card {
-    max-width: 680px; /* use more horizontal space on desktop */
+    width: 100%;
+    max-width: none;
+    margin: 0;
   }
 }
 
