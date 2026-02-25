@@ -1,0 +1,142 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: #f7f7f7; /* light grey like the assessment */
+  font-family: "Segoe UI", sans-serif;
+  margin: 0;
+}
+
+.page-wrapper {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 16px;
+}
+
+/* Floating WhatsApp button */
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25d366;
+  color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  text-decoration: none;
+  z-index: 1000;
+  transition: transform 0.3s ease;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+  color: white;
+}
+
+/* Card that mimics the phone UI */
+.main-card {
+  background-color: #fef6ef; /* light cream similar to phone body */
+  border: 2px solid #ded6cf;
+  border-radius: 16px;
+  overflow: hidden;
+  max-width: 420px;
+  margin: 0 auto;
+}
+
+.profile-img {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  border: 3px solid #ffffff;
+  object-fit: cover;
+}
+
+.small-text {
+  font-size: 13px;
+  color: #4f4f4f;
+}
+
+.stat-box {
+  border-radius: 12px;
+  padding: 12px;
+}
+
+.stat-box small {
+  font-size: 11px;
+}
+
+.stat-box h4 {
+  margin-top: 6px;
+  font-weight: bold;
+}
+
+/* Stat colours */
+.stat-green { background-color: #fbe4d5; }     /* warm peach */
+.stat-lightgreen { background-color: #ffeec2; } /* soft yellow */
+.stat-yellow { background-color: #d7f0c5; }     /* pale green */
+.stat-pink { background-color: #f9d1e5; }       /* light pink */
+
+/* Encouragement section */
+.encouragement {
+  background: #f6b74e; /* golden orange strip like design */
+  padding: 12px;
+  border-radius: 10px;
+  font-size: 12px;
+  color: #31250a;
+}
+
+/* Membership cards */
+.membership {
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.membership-header {
+  padding: 12px;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+.membership-body {
+  padding: 12px;
+  font-size: 12px;
+}
+
+.foundation {
+  background-color: #f4b32a; /* bright foundation yellow/orange */
+  color: #ffffff;
+}
+
+.economy {
+  background-color: #556a89; /* muted navy like assessment */
+  color: #fff;
+}
+
+/* Footer strip matching the design */
+.footer-strip {
+  background-color: #f4b32a;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+/* Responsive tweaks */
+@media (min-width: 576px) {
+  .page-wrapper {
+    padding: 60px 24px;
+  }
+}
+
+@media (min-width: 992px) {
+  .page-wrapper {
+    padding: 80px 32px;
+  }
+}
